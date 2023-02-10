@@ -1,0 +1,25 @@
+.register-weights {
+    padding: 1rem;
+    border-radius: 5px;
+
+    .title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #686868;
+    }
+
+    ul li {
+        background-color: #ebebeb86;
+        border-radius: 8px;
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+
+        .btn-danger {
+            $danger: #dc3545b5;
+
+            background-color: $danger;
+            border-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="register-weights border">
+    <div class="d-flex mb-4">
+        <h3 class="title"> Registration </h3>
+        <button class="btn btn-sm btn-secondary py-2 ms-auto" (click)="removeAll()"> Remove all Weights </button>
+    </div>
+    <ul class="list-unstyled">
+        <li class="d-flex align-items-center" *ngFor="let weight of allWeights">
+            <p class="mb-0"> {{ weight.weight }} kg </p>
+            <button class="btn btn-danger ms-auto" (click)="removeWeight(weight._id)"> <i class="fa-solid fa-trash"></i> </button>
+        </li>
+    </ul>
+</div>

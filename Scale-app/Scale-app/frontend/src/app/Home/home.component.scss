@@ -1,0 +1,35 @@
+.weigh-section{
+    $button-color: #0f75ae;
+    $button-text-color: #fafbfc;
+
+    text-align: center;
+    padding-block: 2rem;
+    border-radius: 5px;
+
+    h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $button-color;
+    }
+
+    // Home compoennt
+    .btn-primary {
+        background-color: $button-color;
+        border: 1px solid $button-color;
+        color: $button-text-color;
+
+        transition: background 300ms ease;
+
+        &:hover{
+            background-color: $button-color;
+            opacity: 0.85;
+        }
+    }
+
+    .btn{
+        padding: 0.8rem 2rem;
+        border-radius: 1.5rem;
+    }
+
+}

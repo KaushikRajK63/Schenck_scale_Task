@@ -1,0 +1,41 @@
+<div class="container app-module">
+  <div class="main-section">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- Tabs nav -->
+        <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist">
+          <a class="nav-link mb-3 p-3 active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            <i class="fa-solid fa-house me-2"></i>
+            Home
+          </a>
+
+          <a class="nav-link mb-3 p-3" id="v-pills-register-tab" data-bs-toggle="pill" href="#v-pills-register"
+            role="tab" aria-controls="v-pills-profile" aria-selected="false"
+            (click)="getAllWeight()"  
+          >
+            <i class="fa-solid fa-table me-2"></i>
+            Registration
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-md-9 px-5">
+        <!-- Tabs content -->
+        <div class="tab-content" id="v-pills-tabContent">
+
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+            aria-labelledby="v-pills-home-tab">
+            <app-home></app-home>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-register" role="tabpanel"
+            aria-labelledby="v-pills-profile-tab">
+            <app-rgister *ngIf="allWeights" [allWeights]="allWeights"></app-rgister>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
